@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UTN</title>
+        <meta name="description" content="Universidad Tecnologica Nacional" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/icono.png" alt="Logo UTN" class="logo"></a>
+            </div>
+            <div class="nav-links">
+                <nav>
+                    <a href="./alumnos.html">Alumnos</a>
+                    <a href="./profesores.html">Profesores</a>
+                    <a href="./materias.html">Materias</a>
+                    <a href="./notas.html">Notas</a>
+                </nav>
+        </div>
+        </header>
+
+        <main>
+            <form class="form" id="agregar-nota">
+                <h2>Agregar una nota</h2>
+                <div>
+                    <label>Legajo del alumno</label>
+                    <input class="input-form" id="legajo-agregar-nota" type="number" required />
+                </div>
+                <div>
+                    <label>Id de la materia</label>
+                    <input class="input-form" id="materia-agregar-nota" type="text" required />
+                </div>
+                <div>
+                    <label>Nota</label>
+                    <input class="input-form" id="nota-agregar-nota" type="number" required />
+                </div>
+                <div>
+                    <label>Fecha</label>
+                    <input class="input-form" id="fecha-agregar-nota" type="date" required />
+                </div>
+                <button class="button" type="submit">Registrar</button>
+            </form>
+
+            <form class="form" id="modificar-nota">
+                <h2>Modificar una nota</h2>
+                <h5>Ingrese el id de la nota que desea modificar y los nuevos datos</h5>
+                <div>
+                    <label>Id de la nota</label>
+                    <input class="input-form" id="id-modificar-nota" type="number" required />
+                </div>
+                <div>
+                    <label>Nota</label>
+                    <input class="input-form" id="nota-modificar-nota" type="number" required />
+                </div>
+                <div>
+                    <label>Fecha</label>
+                    <input class="input-form" id="fecha-modificar-nota" type="date" required />
+                </div>
+                <button class="button" type="submit">Modificar</button>
+            </form>
+
+            <form class="form" id="eliminar-nota">
+                <h2>Eliminar una nota</h2>
+                <h5>Ingrese el id de la nota que desea eliminar</h5>
+                <div>
+                    <label>Id</label>
+                    <input class="input-form" id="id-eliminar-nota" type="number" required />
+                </div>
+                <button class="button" type="submit">Eliminar</button>
+            </form>
+
+            <form class="form" id="buscar-nota">
+                <h5>Ingrese el id de la nota que desea buscar</h5>
+                <div>
+                    <label>Id</label>
+                    <input class="input-form" id="id-buscar-nota" type="search" />
+                </div>
+                <button class="button" type="submit">Buscar</button>
+            </form>
+        </main>
+
+        <footer class="footer-style">
+            <p>© UTN - Todos los derechos reservados</p>
+        </footer>
+
+        <script src="../js/notas.js"></script>
+    </body>
+</html>
