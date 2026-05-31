@@ -1,0 +1,25 @@
+@import url(./components/button-style.css);
+@import url(./components/cards-style.css);
+@import url(./components/footer-style.css);
+@import url(./components/form-style.css);
+@import url(./components/header-style.css);
+@import url(./components/input-style.css);
+
+body {
+    background-color: #3c3c3c;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
